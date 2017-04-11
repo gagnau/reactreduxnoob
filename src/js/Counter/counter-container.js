@@ -2,7 +2,7 @@
 /** Counter container - links the presentational react component with redux  **/
 
 import { connect } from 'react-redux'
-import CounterComponent from './counter-component'
+import CounterComponent from './counter-component.jsx'
 import { countDown, countUp } from './counter-action'
 
 const mapStateToProps = (state) => {
