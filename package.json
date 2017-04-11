@@ -1,5 +1,5 @@
 {
-  "name": "rsp",
+  "name": "React, Redux SPA base application",
   "version": "1.0.0",
   "main": "src/js/index.js",
   "license": "MIT",

@@ -3,9 +3,8 @@ import React, {PropTypes} from 'react'
 const StartPageComponent = () => {
   return (
     <div className="startpage-container">
-      <h1>Welcome to Rock Papers Scissors!</h1>
-      <input type="text" placeholder="Nickname" className="input-nickname"/>
-      <button className="input-button"> Start Game </button>
+      <h1>Hello world</h1>
+      <p>Please not that this application is in alpha stage and not yet finished</p>
     </div>
   )
 }
