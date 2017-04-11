@@ -28,3 +28,11 @@ Right now, it's a simple counter that counts up and down depending on the button
 - less is used to compile to css
 - less-watch-compiler is used to watch less changes
 - react-router is used for SPA routing
+
+
+### ROADMAP
+
+- Add eslint
+- Only ```yarn start``` to start server, build and watch
+- Add styelint
+- Add routing
