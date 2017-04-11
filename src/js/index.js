@@ -5,8 +5,6 @@ import { render } from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router'
 import CounterReducer from './Counter/counter-reducer'
 import CounterContainer from './Counter/counter-container'
-
-
 import StartViewComponent from './GameViews/startview-component'
 
 const store = createStore(CounterReducer)
@@ -19,7 +17,8 @@ render(
 )
 
 
-/*    <Router history={hashHistory}>
-      <Route path='/' component={CounterContainer} />
-    </Router>
-    */
+/*
+  <Router history={hashHistory}>
+    <Route path='/' component={CounterContainer} />
+  </Router>
+*/
