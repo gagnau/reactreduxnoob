@@ -1,7 +1,6 @@
 Purpose of this project is to provide a small and easy to understand React/Redux SPA to use as base for further development.
 
-### NOTE:
-Right now, this is a work in progress and cannot be used "out of the box" because it's a bit broken - I'll fix it as soon as possible
+Right now, it's a simple counter that counts up and down depending on the buttons clicked.
 
 ### What you get:
 - Yarn for dependency managing
