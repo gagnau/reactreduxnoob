@@ -1,5 +1,5 @@
-#NOTE:
-This is a work in progress right now and cannot be used because it's broken 
+### NOTE:
+Right now, this is a work in progress right now and cannot be used because it's broken 
 
 Purpose of this project is to provide a small and easy to understand React/Redux SPA to use as base for further development.
 
@@ -11,7 +11,7 @@ Purpose of this project is to provide a small and easy to understand React/Redux
 - Redux
 - React routing for SPA navigation
 
-##USAGE
+### USAGE
 1. CLI: run ```yarn install``` to install dependencies
 2. run ```yarn start``` to start the server
 3. run ```yarn all``` to build and watch the js source code
