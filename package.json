@@ -1,12 +1,13 @@
 {
   "name": "React-Redux-SPA-base-application",
   "version": "1.0.0",
-  "main": "src/js/index.js",
+  "main": "src/js/index.jsx",
   "license": "MIT",
   "scripts": {
     "less": "less-watch-compiler src/less build/css main.less",
     "watch": "watchify src/js/index.js -o build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
     "build": "browserify src/js/index.js > build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
+    "lint": "eslint src/js/**",
     "start": "browserify-server --server=build --port 2000",
     "all": "yarn build && yarn watch"
   },
@@ -16,6 +17,7 @@
     "babelify": "^7.3.0",
     "browserify": "^14.1.0",
     "browserify-server": "^2.1.18",
+    "eslint": "^3.19.0",
     "less": "^2.7.2",
     "less-watch-compiler": "^1.4.2",
     "react": "^15.4.2",
@@ -24,5 +26,15 @@
     "react-router": "^4.0.0",
     "redux": "^3.6.0",
     "watchify": "^3.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-standard": "^10.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }

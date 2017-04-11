@@ -1,13 +1,13 @@
+/* eslint-disable */
 /** Counter container - links the presentational react component with redux  **/
 
-import React from 'react'
 import { connect } from 'react-redux'
 import CounterComponent from './counter-component'
-import {countDown, countUp} from './counter-action'
+import { countDown, countUp } from './counter-action'
 
 const mapStateToProps = (state) => {
   return {
-    currentCount: state.currentCount
+    currentCount: state.currentCount,
   }
 }
 
