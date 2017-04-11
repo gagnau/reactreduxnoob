@@ -1,7 +1,7 @@
-### NOTE:
-Right now, this is a work in progress right now and cannot be used because it's broken 
-
 Purpose of this project is to provide a small and easy to understand React/Redux SPA to use as base for further development.
+
+### NOTE:
+Right now, this is a work in progress and cannot be used "out of the box" because it's a bit broken - I'll fix it as soon as possible
 
 ### What you get:
 - Browserify for packaging and serving
