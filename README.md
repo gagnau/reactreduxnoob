@@ -1,4 +1,5 @@
-###NOTE: This is a work in progress right now and cannot be used because it's broken 
+#NOTE:
+This is a work in progress right now and cannot be used because it's broken 
 
 Purpose of this project is to provide a small and easy to understand React/Redux SPA to use as base for further development.
 
