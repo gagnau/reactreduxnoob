@@ -1,12 +1,12 @@
 {
-  "name": "React, Redux SPA base application",
+  "name": "React-Redux-SPA-base-application",
   "version": "1.0.0",
   "main": "src/js/index.js",
   "license": "MIT",
   "scripts": {
     "less": "less-watch-compiler src/less build/css main.less",
-    "watch": "watchify src/js/index.js -o build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
-    "build": "browserify src/js/index.js -o build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
+    "watch": "watchify src/js/index.js -o build/js/bundle.js -td [ babelify --presets [ es2015 react ] ]",
+    "build": "browserify src/js/index.js > build/js/bundle.js -td [ babelify --presets [ es2015 react ] ]",
     "start": "browserify-server --server=build --port 2000",
     "all": "yarn build && yarn watch"
   },
