@@ -1,0 +1,12 @@
+{
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+     "rules": {
+        // Override some rules that shouldn't be there
+        "semi": 0
+    }
+}

@@ -5,10 +5,10 @@ export const INCREMENT = 'INCREMENT'
 
 export const countDown = () => ({
   type: DECREMENT,
-  payload: 1
+  payload: 1,
 })
 
-export const countUp = (zipCodeInput) => ({
+export const countUp = () => ({
   type: INCREMENT,
-  payload: 1
+  payload: 1,
 })
