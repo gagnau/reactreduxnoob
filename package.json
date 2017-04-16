@@ -6,11 +6,14 @@
   "scripts": {
     "start": "concurrently --kill-others \"yarn js-all\" \"yarn less\" \"yarn server\"",
     "less": "less-watch-compiler src/less build/css main.less",
-    "js-watch": "watchify src/js/index.jsx -o build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
+    "js-watch": "watchify src/js/index.jsx --extension=.jsx -o build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
     "js-build": "browserify src/js/index.jsx > build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
     "server": "browserify-server --server=build --port 2000",
     "js-all": "yarn js-build && yarn js-watch",
     "js-lint": "eslint src/js/**"
+  },
+  "browserify": {
+    "extension": [ "jsx" ]
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.0",

@@ -8,5 +8,8 @@
      "rules": {
         // Override some rules that shouldn't be there
         "semi": 0
+    },
+    "globals" : {
+        "window": true
     }
 }
