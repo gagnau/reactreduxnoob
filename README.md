@@ -13,10 +13,8 @@ Right now, it's a simple counter that counts up and down depending on the button
 
 ### USAGE
 1. CLI: run ```yarn install``` to install dependencies
-2. run ```yarn start``` to start the server
-3. run ```yarn all``` to build and watch the js source code
-4. run ```yarn less``` to build and watch the less source code
-5. Go to http://localhost:2000 to run the application
+2. run ```yarn start``` to build the code, start the application and start watching
+3. Go to http://localhost:2000 to run the application
 
 - yarn is used as dependency manager
 - browserify is used to bundle the app
@@ -33,6 +31,5 @@ Right now, it's a simple counter that counts up and down depending on the button
 ### ROADMAP
 
 - Add eslint
-- Only ```yarn start``` to start server, build and watch
 - Add styelint
 - Add routing
