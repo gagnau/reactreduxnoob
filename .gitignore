@@ -7,3 +7,6 @@ node_modules
 # Build files, should be entire build/ directory - but for now let's have it like this
 build/js/bundle.js
 build/css/main.css
+
+# Mac specific files
+.DS_Store
