@@ -2,16 +2,10 @@
 import React, { PropTypes } from 'react'
 
 const CounterComponent = (({ currentCount, onCountDown, onCountUp }) =>
-  <div>
+  <div className='counter'>
     <p>Current count: {currentCount}</p>
     <button onClick={() => onCountDown()}>-</button>
     <button onClick={() => onCountUp()}>+</button>
-    { /*
-    <div className='navigation'>
-      <button>Previous Page</button>
-      <button>Next Page</button>
-    </div>
-    */ }
   </div>
 )
 
