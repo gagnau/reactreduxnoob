@@ -10,7 +10,7 @@
     "js-build": "browserify  --extension=.jsx src/index.jsx > build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
     "server": "browserify-server --server=build --port 2000",
     "js-all": "yarn js-build && yarn js-watch",
-    "js-lint": "eslint src/**"
+    "js-lint": "eslint src/**/*.js*"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.0",

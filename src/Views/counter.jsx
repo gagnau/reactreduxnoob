@@ -1,5 +1,5 @@
 import React from 'react'
-import CounterContainer from '../Counter/counter-container'
+import CounterContainer from '../Components/Counter/counter-container'
 
 const StartPageComponent = (() =>
   <div className="startpage-container">
