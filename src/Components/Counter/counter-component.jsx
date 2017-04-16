@@ -3,10 +3,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const CounterComponent = (({ currentCount, onCountDown, onCountUp }) =>
-  <div className='counter'>
+  <div className="counter">
     <p>Current count: {currentCount}</p>
-    <button onClick={() => onCountDown()}>-</button>
-    <button onClick={() => onCountUp()}>+</button>
+    <button className="button" onClick={() => onCountDown()}>-</button>
+    <button className="button" onClick={() => onCountUp()}>+</button>
   </div>
 )
 

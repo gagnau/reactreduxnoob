@@ -1,0 +1,50 @@
+.button {
+	display: inline-block;
+	width: auto;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #3C4A53;
+	color: @white;
+	padding: 10px 0px;
+	font-size: 1.2em;
+	width: 100%;
+	margin: 10px auto;
+	@media @medium {
+		width: auto;
+		padding: 10px 20px;		
+	}
+}
+
+.button--red {
+	background-color: @red;
+}
+
+.button--lightblue {
+	background-color: @lightblue;
+}
+
+.button--blue {
+	background-color: @blue;
+}
+
+.button--green {
+	background-color: @green;
+}
+
+.button--fullwidth {
+	width: 100%;
+}
+
+.button:hover {
+	text-decoration: none;
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.button:disabled {
+	opacity: 0.5;
+	&:hover {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
+}
