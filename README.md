@@ -15,6 +15,7 @@ Right now, it's a simple counter that counts up and down depending on the button
 1. CLI: run ```yarn install``` to install dependencies
 2. run ```yarn start``` to build the code, start the application and start watching
 3. Go to http://localhost:2000 to run the application
+4. Run ```yarn js-lint``` to check the js code before commit
 
 - yarn is used as dependency manager
 - browserify is used to bundle the app
@@ -26,10 +27,8 @@ Right now, it's a simple counter that counts up and down depending on the button
 - less is used to compile to css
 - less-watch-compiler is used to watch less changes
 - react-router is used for SPA routing
-
+- Air bnb lint rules are used with semi exception
 
 ### ROADMAP
-
-- Add eslint
 - Add styelint
 - Add routing
