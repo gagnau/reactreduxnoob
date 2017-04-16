@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently --kill-others \"yarn js-all\" \"yarn less\" \"yarn server\"",
-    "less": "less-watch-compiler src/ build/css index.less",
+    "less": "less-watch-compiler src/ build/css less/main.less",
     "js-watch": "watchify src/index.jsx --extension=.jsx -o build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
     "js-build": "browserify  --extension=.jsx src/index.jsx > build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
     "server": "browserify-server --server=build --port 2000",
