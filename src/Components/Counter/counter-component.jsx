@@ -1,5 +1,6 @@
 /** Counter presentational react component **/
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const CounterComponent = (({ currentCount, onCountDown, onCountUp }) =>
   <div className='counter'>
