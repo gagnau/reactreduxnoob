@@ -4,9 +4,9 @@ import { Provider } from 'react-redux'
 import { render } from 'react-dom'
 // import { Router, Route, hashHistory } from 'react-router'
 import StartPage from './Views/start-page'
-import CounterReducer from './Components/Counter/counter-reducer'
+import reducer from './reducers'
 
-const store = createStore(CounterReducer)
+const store = createStore(reducer)
 
 render(
   <Provider store={store}>

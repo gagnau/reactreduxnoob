@@ -5,7 +5,7 @@ import CounterComponent from './counter-component'
 import { countDown, countUp } from './counter-action'
 
 const mapStateToProps = state => ({
-  currentCount: state.currentCount,
+  currentCount: state.counterReducer.currentCount,
 })
 
 const mapDispatchToProps = dispatch => ({

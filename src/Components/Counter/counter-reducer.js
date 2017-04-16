@@ -4,7 +4,7 @@ const initialState = {
   currentCount: 0,
 }
 
-const CounterReducer = (state = initialState, action = {}) => {
+const counterReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case DECREMENT: {
       return Object.assign({}, state, { currentCount: state.currentCount - action.payload })
@@ -17,4 +17,4 @@ const CounterReducer = (state = initialState, action = {}) => {
   }
 }
 
-export default CounterReducer
+export default counterReducer
