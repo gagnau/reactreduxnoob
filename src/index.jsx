@@ -4,13 +4,17 @@ import { Provider } from 'react-redux'
 import { render } from 'react-dom'
 // import { Router, Route, hashHistory } from 'react-router'
 import StartPage from './Views/start-page'
+import NavigationComponent from './Components/Navigation/navigation-component'
 import reducer from './reducers'
 
 const store = createStore(reducer)
 
 render(
   <Provider store={store}>
-    <StartPage />
+  	<div>
+	  	<NavigationComponent />
+    	<StartPage />
+    </div>
   </Provider>,
   window.document.getElementById('main-app'),
 )
