@@ -5,9 +5,11 @@
         "jsx-a11y",
         "import"
     ],
-     "rules": {
-        // Override some rules that shouldn't be there
-        "semi": 0
+     "rules": {                       // Override some rules:
+        "semi": 0,                    // No semicolons needed
+        "max-len": [2, 150],          // 150 characters max per row
+        "indent": [2, 4],             // Four space tabs for .js
+        "react/jsx-indent": [2, 4]    // Four space tabs for .jsx
     },
     "globals" : {
         "window": true

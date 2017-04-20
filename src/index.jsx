@@ -9,12 +9,12 @@ import reducer from './reducers'
 const store = createStore(reducer)
 
 render(
-  <Provider store={store}>
-  	<div>
-		<Router>
-            <NavigationComponent />
-		</Router>
-    </div>
-  </Provider>,
-  window.document.getElementById('main-app'),
+    <Provider store={store}>
+        <div>
+            <Router>
+                <NavigationComponent />
+            </Router>
+        </div>
+    </Provider>,
+    window.document.getElementById('main-app'),
 )

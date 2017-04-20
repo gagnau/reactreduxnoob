@@ -5,16 +5,16 @@ import CounterComponent from './counter-component'
 import { countDown, countUp } from './counter-action'
 
 const mapStateToProps = state => ({
-  currentCount: state.counterReducer.currentCount,
+    currentCount: state.counterReducer.currentCount,
 })
 
 const mapDispatchToProps = dispatch => ({
-  onCountDown: () => {
-    dispatch(countDown())
-  },
-  onCountUp: () => {
-    dispatch(countUp())
-  },
+    onCountDown: () => {
+        dispatch(countDown())
+    },
+    onCountUp: () => {
+        dispatch(countUp())
+    },
 })
 
 const CounterContainer = connect(mapStateToProps, mapDispatchToProps)(CounterComponent)

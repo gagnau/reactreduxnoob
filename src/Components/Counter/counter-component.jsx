@@ -3,17 +3,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const CounterComponent = (({ currentCount, onCountDown, onCountUp }) =>
-  <div className="counter">
-    <p>Current count: {currentCount}</p>
-    <button className="button" onClick={() => onCountDown()}>-</button>
-    <button className="button" onClick={() => onCountUp()}>+</button>
-  </div>
+    <div className="counter">
+        <p>Current count: {currentCount}</p>
+        <button className="button" onClick={() => onCountDown()}>-</button>
+        <button className="button" onClick={() => onCountUp()}>+</button>
+    </div>
 )
 
 CounterComponent.propTypes = {
-  currentCount: PropTypes.number.isRequired,
-  onCountDown: PropTypes.func.isRequired,
-  onCountUp: PropTypes.func.isRequired,
+    currentCount: PropTypes.number.isRequired,
+    onCountDown: PropTypes.func.isRequired,
+    onCountUp: PropTypes.func.isRequired,
 }
 
 export default CounterComponent

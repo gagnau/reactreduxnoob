@@ -1,20 +1,20 @@
 import { INCREMENT, DECREMENT } from './counter-action'
 
 const initialState = {
-  currentCount: 0,
+    currentCount: 0,
 }
 
 const counterReducer = (state = initialState, action = {}) => {
-  switch (action.type) {
+    switch (action.type) {
     case DECREMENT: {
-      return Object.assign({}, state, { currentCount: state.currentCount - action.payload })
+        return Object.assign({}, state, { currentCount: state.currentCount - action.payload })
     }
     case INCREMENT: {
-      return Object.assign({}, state, { currentCount: state.currentCount + action.payload })
+        return Object.assign({}, state, { currentCount: state.currentCount + action.payload })
     }
     default:
-      return state
-  }
+        return state
+    }
 }
 
 export default counterReducer
