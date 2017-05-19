@@ -4,6 +4,8 @@
   "main": "src/js/index.jsx",
   "license": "MIT",
   "scripts": {
+    "don-use-yet-js-compile-server": "yarn js-create-folders && browserify --extension=.jsx src/comhemplay/comhem.js -x react -i react-dom -x react-dom/server -x react/redux -i redux-thunk -i babel-polyfill -i whatwg-fetch > packaging/comhemplay/build/server/js/comhem.js -t [babelify]",
+    "dont-use-yet-js-test": "mocha --compilers js:babel-core/register \"src/comhemplay/**/*spec*.@(js|jsx)\" --reporter spec",
     "start": "concurrently --kill-others \"yarn js-all\" \"yarn less-all\" \"yarn server\"",
     "less": "lessc src/less/main.less build/css/main.css",
     "less-watch": "less-watch-compiler src/ build/css less/main.less",
@@ -11,7 +13,7 @@
     "js-build": "browserify  --extension=.jsx src/index.jsx > build/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
     "server": "browserify-server --server=build --port 2000",
     "less-all": "yarn less && yarn less-watch",
-    "js-all": "yarn js-build && yarn js-watch",
+    "js-all": "yarn js-build &&¶ yarn js-watch",
     "js-lint": "eslint src/**/*/*.js*"
   },
   "dependencies": {

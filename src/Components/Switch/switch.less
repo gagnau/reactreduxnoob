@@ -1,0 +1,55 @@
+@red: #ea2424;
+@green: #24ea55;
+
+.switch {
+	width: 50px;
+	height: 26px;
+	border: 1px solid #bbbbbb;
+	background-color: #eeeeee;
+	position: relative;
+	border-radius: 26px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.switch__flip {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+	transition: background-color .2s, left .2s;
+}
+
+.switch__flip--off {
+	animation: neonred 1.5s ease-in-out infinite alternate;
+	background-color: @red;
+	font-size: 222px;
+	left: 2px;
+}
+
+.switch__flip--on {
+	animation: neongreen 1.5s ease-in-out infinite alternate;
+	background-color: @green;
+	left: 26px;
+}
+
+@keyframes neonred {
+  from {
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px @red, 0 0 7px @red, 0 0 8px @red, 0 0 10px @red, 0 0 15px @red;
+  }
+  to {
+    box-shadow: 0 0 #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px @red, 0 0 3px @red, 0 0 4px @red, 0 0 5px @red, 0 0 7px @red;
+  }
+}
+
+@-moz-keyframes neongreen {
+  from {
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px @green, 0 0 7px @green, 0 0 8px @green, 0 0 10px @green, 0 0 15px @green;
+  }
+  to {
+    box-shadow: 0 0 #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px @green, 0 0 3px @green, 0 0 4px @green, 0 0 5px @green, 0 0 7px @green;
+  }
+}
