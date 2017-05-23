@@ -14,7 +14,7 @@
     "server": "browserify-server --server=build --port 2000",
     "less-all": "yarn less && yarn less-watch",
     "js-all": "yarn js-build &&¶ yarn js-watch",
-    "js-lint": "eslint src/**/*/*.js*"
+    "js-lint": "eslint  --ext .jsx --ext .js src/"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.0",
